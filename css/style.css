@@ -17,6 +17,7 @@ a {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -50,8 +51,9 @@ h3 {
 p {
     font-size: 18px;
     color: var(--cs-black);
-    -webkit-text-stroke: 0.5px var(--cs-black);
+    font-family: 'Exo 2', sans-serif !important;
     line-height: 28px;
+    font-weight: 400;
 }
 
 a {
@@ -60,6 +62,7 @@ a {
 
 .p-60 {
     padding: 60px 0px;
+
 }
 
 .hl {
@@ -128,7 +131,7 @@ a {
 
 .nav-item {
     position: relative;
-    padding: 0px 0px 0px 16px;
+    padding: 0px 0px 0px 12px;
 }
 
 .nav-link {
@@ -193,7 +196,6 @@ a {
 .hero_content h2 {
     text-transform: capitalize !important;
     font-weight: 400 !important;
-    ;
 }
 
 .hero_content p {
@@ -243,8 +245,10 @@ img.vert-move {
 /* ====== hero ends ====== */
 
 /* ====== about starts ====== */
-.about_title {
+.general_title {
     text-align: center;
+    width: 50%;
+    margin: auto;
 }
 
 .line span {
@@ -311,4 +315,289 @@ img.vert-move {
 .google_partners img {
     width: 70%;
     text-align: center;
+}
+
+/* ====== about ends ====== */
+
+/* ====== Service starts ====== */
+.services_price {
+    background: rgb(0, 166, 220);
+    background: linear-gradient(360deg, rgba(0, 166, 220, 0.6811099439775911) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    width: 100%;
+    left: 0;
+    color: var(--cs-primary);
+    transition: .3s all ease-in-out, .3s all ease-in-out;
+    background-color: transparent;
+    -webkit-text-stroke: 1px var(--cs-primary);
+}
+
+.nav-link.active:after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-pills .nav-link:hover {
+    font-weight: 400;
+    -webkit-text-stroke: 0;
+}
+
+.nav-pills {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.nav-pills .nav-link {
+    color: var(--cs-text);
+    transition: .3s all ease-in-out, .3s all ease-in-out;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.tab {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 9px -1px #00000029;
+    background-color: var(--cs-white);
+}
+
+
+.service_price_tab {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    /* background-color: var(--cs-white);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 1px #00000026; */
+}
+
+.servicetab_content {
+    margin-top: 40px;
+}
+
+.sertab_des {
+    text-align: left;
+}
+
+.serv {
+    padding: 20px;
+}
+
+.serv li {
+    display: flex;
+    align-items: baseline;
+}
+
+.serv li i {
+    font-size: 20px;
+    margin-right: 16px;
+    color: var(--cs-primary);
+}
+
+.item {}
+
+.item p {}
+
+.item p b {
+    font-family: 'Exo 2', sans-serif !important;
+    color: var(--cs-primary);
+}
+
+.pricing {}
+
+.pricing li {
+    margin-bottom: 5px;
+}
+
+.pricing li p b {
+    font-family: 'Exo 2', sans-serif !important;
+    color: var(--cs-primary);
+}
+
+.serv_img img {
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.serv_img img:hover {
+    transform: scale(1.05);
+
+}
+
+.service_button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.service_button .btn-cs {
+    margin: 0;
+}
+
+/* ====== Service ends ====== */
+
+/* ====== testimonial starts ====== */
+.testimonial {
+    padding-bottom: 100px;
+}
+
+.testimonial_content {
+    margin-bottom: 30px;
+}
+
+.cs_card {}
+
+.cs_content {
+    padding: 30px;
+    background-color: var(--cs-white);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 3px 12px 0px #00000029;
+    margin: 10px;
+}
+
+/* .cs_content::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    bottom: -37px;
+    left: 65px;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 0% 100%);
+    background-color: #000000
+} */
+
+.star {
+    margin: 20px 0px;
+}
+
+.star i {
+    color: var(--cs-primary);
+}
+
+.cs_client {
+    display: flex;
+    margin-top: 30px;
+}
+
+.cs_client img {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.client_des {
+    margin-left: 15px;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+
+.owl-dots .owl-dot span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: var(--cs-primary);
+    margin: 5px;
+}
+
+.owl-dots .active span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: var(--cs-text);
+}
+
+/* ====== testimonial ends ====== */
+
+/* ====== Contact starts ====== */
+.contact {
+    background: rgb(0, 166, 220);
+    background: linear-gradient(360deg, rgba(0, 166, 220, 0.6811099439775911) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.contact_content form {
+    margin-top: 20px;
+}
+
+.contact_content form input {
+    background-color: transparent;
+    border: 1px solid var(--cs-text);
+    padding: 8px 15px;
+    margin-bottom: 15px;
+}
+
+.contact_content form textarea {
+    background-color: transparent;
+    border: 1px solid var(--cs-text);
+    padding: 8px 15px;
+    margin-bottom: 15px;
+}
+
+.contact_content form input::placeholder {
+    font-family: 'Exo 2', sans-serif !important;
+    
+}
+
+.contact_content form textarea::placeholder {
+    font-family: 'Exo 2', sans-serif !important;
+    
+}
+
+.contact_button {}
+
+.contact_content form input[type='submit'] {
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.contact_content form input[type='submit']:hover {
+    background-color: var(--cs-text);
+    color: var(--cs-white);
+}
+
+.form-control:focus {
+    color: var(--cs-text);
+    background-color: transparent;
+    border-color: var(--cs-primary);
+    outline: 0;
+    box-shadow: var(--cs-primary);
+}
+
+.contact_image{
+    text-align: center;
+}
+
+.contact_image h3{
+}
+
+.con_side{}
+
+.con_side img{
+    padding: 20px 0px;
+}
+
+.con_side img:hover{
+    transform:rotate(360);
+}
+
+.con_side p{
+    font-style: italic;
 }
