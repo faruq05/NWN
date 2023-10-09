@@ -23,7 +23,7 @@ a {
 :root {
     --cs-primary: #00a6dc;
     --cs-text: #17183c;
-    --cs-subprimary: #3ec2ae;
+    --cs-bg: #f0f8ff;
     --cs-black: #000;
     --cs-white: #fff;
 }
@@ -61,7 +61,7 @@ a {
 }
 
 .p-60 {
-    padding: 60px 0px;
+    padding: 100px 0px;
 
 }
 
@@ -126,7 +126,7 @@ a {
 }
 
 .navbar img {
-    width: 25%;
+    width: 22%;
 }
 
 .nav-item {
@@ -245,6 +245,14 @@ img.vert-move {
 /* ====== hero ends ====== */
 
 /* ====== about starts ====== */
+.about {
+    background: url(../images/aboutbg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .general_title {
     text-align: center;
     width: 50%;
@@ -321,8 +329,7 @@ img.vert-move {
 
 /* ====== Service starts ====== */
 .services_price {
-    background: rgb(0, 166, 220);
-    background: linear-gradient(360deg, rgba(0, 166, 220, 0.6811099439775911) 0%, rgba(0, 0, 0, 0) 70%);
+    background-color: var(--cs-bg);
 }
 
 
@@ -410,12 +417,13 @@ img.vert-move {
 .pricing {}
 
 .pricing li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .pricing li p b {
     font-family: 'Exo 2', sans-serif !important;
     color: var(--cs-primary);
+    font-size: 22px;
 }
 
 .serv_img img {
@@ -438,11 +446,32 @@ img.vert-move {
     margin: 0;
 }
 
+.btn-cs2 {
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    padding: 15px 30px;
+    color: var(--cs-text);
+    font-weight: 600;
+    border-color: var(--cs-text);
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.btn-cs2:hover {
+    border-color: var(--cs-primary);
+    color: var(--cs-bg);
+    background-color: var(--cs-primary);
+}
+
 /* ====== Service ends ====== */
 
 /* ====== testimonial starts ====== */
 .testimonial {
     padding-bottom: 100px;
+    background: url(../images/testimonialbg.png);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .testimonial_content {
@@ -482,7 +511,8 @@ img.vert-move {
 
 .cs_client {
     display: flex;
-    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--cs-primary);
 }
 
 .cs_client img {
@@ -530,8 +560,7 @@ img.vert-move {
 
 /* ====== Contact starts ====== */
 .contact {
-    background: rgb(0, 166, 220);
-    background: linear-gradient(360deg, rgba(0, 166, 220, 0.6811099439775911) 0%, rgba(0, 0, 0, 0) 70%);
+    background-color: var(--cs-bg);
 }
 
 .contact_content form {
@@ -554,18 +583,19 @@ img.vert-move {
 
 .contact_content form input::placeholder {
     font-family: 'Exo 2', sans-serif !important;
-    
+
 }
 
 .contact_content form textarea::placeholder {
     font-family: 'Exo 2', sans-serif !important;
-    
+
 }
 
 .contact_button {}
 
 .contact_content form input[type='submit'] {
     transition: .2s all ease-in-out, .2s all ease-in-out;
+    font-weight: 600;
 }
 
 .contact_content form input[type='submit']:hover {
@@ -581,23 +611,53 @@ img.vert-move {
     box-shadow: var(--cs-primary);
 }
 
-.contact_image{
-    text-align: center;
+.contact_image h3 {}
+
+.con_side {
+    margin: 20px 0px;
 }
 
-.contact_image h3{
+.con_side li {
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
-.con_side{}
-
-.con_side img{
-    padding: 20px 0px;
+.con_side li i {
+    color: var(--cs-text);
+    margin-right: 10px;
+    font-size: 24px;
 }
 
-.con_side img:hover{
-    transform:rotate(360);
+.con_side li a {
+    font-family: 'Exo 2', sans-serif !important;
+    color: var(--cs-text);
+    font-weight: 500;
+    font-size: 16px;
 }
 
-.con_side p{
-    font-style: italic;
+.call p {
+    color: var(--cs-primary);
+    font-weight: 700;
+}
+
+.con_side li:hover {
+    margin-left: 15px;
+}
+
+.con_side li:hover a {
+    color: var(--cs-primary);
+}
+
+/* ====== Contact ends ====== */
+
+/* ====== footer starts ====== */
+.footer {
+    background-color: var(--cs-text);
+    padding: 30px 0px;
+}
+
+.cc p {
+    color: var(--cs-white);
 }
