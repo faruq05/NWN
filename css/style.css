@@ -34,7 +34,7 @@ a {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 43px;
     color: var(--cs-text);
     font-weight: 600;
 }
@@ -127,6 +127,7 @@ a {
     box-shadow: 0px 3px 14px -2px #00000021;
     z-index: 100;
     background-color: var(--cs-white);
+    
 }
 
 .navbar img {
@@ -135,7 +136,7 @@ a {
 
 .nav-item {
     position: relative;
-    padding: 0px 0px 0px 12px;
+    padding: 0px 0px 0px 20px;
 }
 
 .nav-link {
@@ -182,11 +183,16 @@ a {
     box-shadow: none;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
 .offcanvas {
     background-color: #000000c7;
 }
 
-.btn-cls i{
+.btn-cls i {
     color: var(--cs-primary);
     font-size: 20px;
 }
@@ -200,15 +206,6 @@ a {
     background: linear-gradient(360deg, rgba(0, 166, 220, 0.6811099439775911) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
-.hero_bg {
-    background: url(../images/hero_bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: screen;
-
-}
-
 .hero .row {
     min-height: 100vh;
 }
@@ -216,7 +213,7 @@ a {
 .hero_content {}
 
 .hero_content h1 {
-    padding: 25px 0px;
+    padding: 22px 0px;
 }
 
 .hero_content h2 {
@@ -295,7 +292,7 @@ img.vert-move {
     margin: auto;
 }
 
-.line span {
+.line .general_title span {
     display: block;
     width: 100%;
     height: 1px;
@@ -304,7 +301,7 @@ img.vert-move {
     position: relative;
 }
 
-.line span::before {
+.line .general_title span::before {
     content: "";
     position: absolute;
     top: -2px;
@@ -333,6 +330,17 @@ img.vert-move {
     100% {
         left: 46%;
     }
+}
+
+.about_content {
+
+    padding: 30px 20px;
+
+    background-color: #ffffff40;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 4px 10px 0px #0000001a;
 }
 
 .about_des {
@@ -365,9 +373,8 @@ img.vert-move {
 
 /* ====== Service starts ====== */
 .services_price {
-    background-color: var(--cs-bg);
+    background: var(--cs-bg);
 }
-
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
@@ -387,6 +394,7 @@ img.vert-move {
 .nav-pills .nav-link:hover {
     font-weight: 400;
     -webkit-text-stroke: 0;
+    color: var(--cs-primary) !important;
 }
 
 .nav-pills {
@@ -399,6 +407,8 @@ img.vert-move {
     transition: .3s all ease-in-out, .3s all ease-in-out;
     background-color: transparent;
     font-weight: 400;
+    padding: 0;
+    padding-bottom: 8px;
 }
 
 .tab {
@@ -520,6 +530,10 @@ img.vert-move {
 
 .testimonial_content {
     margin-bottom: 30px;
+}
+
+.testimonial_carousel {
+    margin-top: 20px;
 }
 
 .cs_card {}
@@ -696,6 +710,42 @@ img.vert-move {
     color: var(--cs-primary);
 }
 
+.social_link {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin: 15px 0px 0px 0px;
+}
+
+.social_link li {
+    width: 35px;
+    height: 35px;
+    background-color: var(--cs-text);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.social_link li:hover {
+    margin-top: -5px;
+    border: 1px solid;
+    border-color: var(--cs-text);
+    background-color: transparent;
+}
+
+.social_link li:hover i {
+    color: var(--cs-text);
+}
+
+.social_link li a {}
+
+.social_link li a i {
+    font-size: 18px;
+    color: var(--cs-white);
+}
+
 /* ====== Contact ends ====== */
 
 /* ====== footer starts ====== */
@@ -819,7 +869,7 @@ body.light .progress-wrap svg.progress-circle path {
 /* ====== Whatstapp ====== */
 .wp {
     position: fixed;
-    bottom: 8%;
+    bottom: 13%;
     right: 15px;
     z-index: 99999999;
 }

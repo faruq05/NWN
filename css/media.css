@@ -14,7 +14,7 @@
 
 
     .header .nav-item {
-        padding: 0;
+        padding-left: 18px;
     }
 
     .general_title {
@@ -48,12 +48,12 @@
     }
 
     .header .nav-link {
-        font-size: 13px;
+        font-size: 14px;
         padding: 0;
     }
 
     .header .nav-item {
-        padding: 0;
+        padding-left: 15px;
     }
 
     .general_title {
@@ -62,6 +62,10 @@
 
     .service_price_tab {
         width: 100%;
+    }
+
+    .social_link {
+        width: 50%;
     }
 }
 
@@ -107,7 +111,7 @@
         width: 60%;
     }
 
-    .header .nav-link{
+    .header .nav-link {
         font-size: 16px;
         color: var(--cs-white) !important;
     }
@@ -115,6 +119,10 @@
     .header .nav-item {
         padding: 10px;
         font-size: 16px;
+    }
+
+    .social_link {
+        width: 65%;
     }
 
 }
@@ -173,7 +181,7 @@
         display: block;
     }
 
-    .hero_image2 img{
+    .hero_image2 img {
         display: block;
     }
 
@@ -264,10 +272,16 @@
         text-align: center;
     }
 
+    .social_link {
+        width: 140px;
+        margin: auto;
+    }
+
     .cc p {
         color: var(--cs-white);
         font-size: 12px;
     }
+
 }
 
 @media(max-width:425px) {
@@ -296,7 +310,7 @@
         width: 100%;
     }
 
-    .header .nav-link{
+    .header .nav-link {
         font-size: 16px;
     }
 
@@ -338,8 +352,8 @@
         display: block;
     }
 
-    
-    .hero_image2 img{
+
+    .hero_image2 img {
         display: block;
         width: 89%;
     }
@@ -389,6 +403,14 @@
 
     .nav-pills .nav-item {
         padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-pills {
+
+        width: 250px;
+
+        margin: auto;
     }
 
     .serv {
@@ -434,5 +456,10 @@
     .cc p {
         color: var(--cs-white);
         font-size: 12px;
+    }
+
+    .social_link {
+        width: 140px;
+        margin: auto;
     }
 }
