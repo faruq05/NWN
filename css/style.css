@@ -186,6 +186,11 @@ a {
     background-color: #000000c7;
 }
 
+.btn-cls i{
+    color: var(--cs-primary);
+    font-size: 20px;
+}
+
 /* ====== header ends====== */
 
 /* ====== hero starts ====== */
@@ -815,7 +820,7 @@ body.light .progress-wrap svg.progress-circle path {
 .wp {
     position: fixed;
     bottom: 8%;
-    right: 1%;
+    right: 15px;
     z-index: 99999999;
 }
 
