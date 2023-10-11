@@ -242,7 +242,7 @@ a {
 
 .hero_image img {
     position: absolute;
-    top: 24%;
+    top: 12%;
     width: 37%;
     right: 50px;
 }
@@ -765,11 +765,12 @@ img.vert-move {
 /* ====== footer starts ====== */
 .footer {
     background-color: var(--cs-text);
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 
 .cc p {
     color: var(--cs-white);
+    font-size: 16px;
 }
 
 /* ====== footer ends ====== */
