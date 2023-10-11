@@ -4,7 +4,7 @@
     }
 
     .navbar-brand img {
-        width: 32%;
+        width: 28%;
     }
 
     .navbar-expand-lg .offcanvas {
@@ -24,6 +24,10 @@
     .service_price_tab {
         width: 100%;
     }
+
+    .logo_sc img {
+        width: 50%!important;
+    }
 }
 
 
@@ -33,7 +37,7 @@
     }
 
     .navbar-brand img {
-        width: 32%;
+        width: 35%;
     }
 
     .hero_image img {
@@ -66,6 +70,10 @@
 
     .social_link {
         width: 50%;
+    }
+
+    .logo_sc img {
+        width: 60%!important;
     }
 }
 
@@ -125,6 +133,11 @@
         width: 65%;
     }
 
+    
+    .logo_sc img {
+        width: 60%!important;
+    }
+
 }
 
 @media(max-width:767px) {
@@ -157,7 +170,7 @@
     }
 
     .navbar img {
-        width: 30%;
+        width: 25%;
     }
 
     .hero_content {
@@ -282,6 +295,9 @@
         font-size: 12px;
     }
 
+    .logo_sc img {
+        width: 50%!important;
+    }
 }
 
 @media(max-width:425px) {
@@ -328,11 +344,11 @@
     }
 
     .navbar img {
-        width: 40%;
+        width: 30%;
     }
 
     .hero_content {
-        margin-top: 50%;
+        margin-top: 45%;
         text-align: center;
     }
 
@@ -461,5 +477,9 @@
     .social_link {
         width: 140px;
         margin: auto;
+    }
+
+    .logo_sc img {
+        width: 60%!important;
     }
 }

@@ -104,14 +104,14 @@ a {
 }
 
 .btn-cs:hover {
-    border-color: var(--cs-primary);
-    color: var(--cs-white);
-    transition: .2s all ease-in-out, .2s all ease-in-out;
+    border-color: var(--cs-primary) !important;
+    color: var(--cs-white) !important;
+    transition: .2s all ease-in-out, .2s all ease-in-out!important;
 }
 
 .btn-cs:hover span {
-    width: 225%;
-    height: 450px;
+    width: 225%!important;
+    height: 450px!important;
     /* You need to define an appropriate height value */
 }
 
@@ -127,7 +127,16 @@ a {
     box-shadow: 0px 3px 14px -2px #00000021;
     z-index: 100;
     background-color: var(--cs-white);
-    
+    padding: 10px 0px;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    -ms-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    transition: padding 0.3s;
+}
+
+.navbar-brand {
+    width: 35%;
 }
 
 .navbar img {
@@ -229,9 +238,9 @@ a {
 
 .hero_image img {
     position: absolute;
-    top: 13%;
-    width: 35%;
-    right: 100px;
+    top: 24%;
+    width: 37%;
+    right: 50px;
 }
 
 .hero_image2 {
@@ -494,6 +503,7 @@ img.vert-move {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    background-color: transparent;
 }
 
 .service_button .btn-cs {
@@ -882,4 +892,33 @@ body.light .progress-wrap svg.progress-circle path {
 
 .wp i:hover {
     transform: scale(1.5);
+}
+
+/* header shrink and logo chamge */
+.brand2 {
+    display: none;
+}
+
+.logomain {
+    display: none;
+}
+
+.logo_sc {
+    display: block;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    -ms-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    transition: padding 0.3s;
+}
+
+.logo_sc img {
+    width: 35%;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.smaller {
+    padding: 5px;
 }
