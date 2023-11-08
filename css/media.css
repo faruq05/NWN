@@ -1,10 +1,10 @@
 @media(max-width: 1399px) {
     .navbar-brand {
-        width: 35%;
+        width: 30%;
     }
 
     .navbar-brand img {
-        width: 28%;
+        width: 40%;
     }
 
     .navbar-expand-lg .offcanvas {
@@ -32,12 +32,24 @@
 
 
 @media(max-width: 1199px) {
+
+    .hero_content{
+        padding-top: 100px;
+    }
+
+    .hero_content h1{
+        font-size: 50px;
+    }
+
+    .hero_content p{
+        font-size: 19px;
+    }
     .navbar-brand {
-        width: 35%;
+        width: 23%;
     }
 
     .navbar-brand img {
-        width: 35%;
+        width: 50%;
     }
 
     .hero_image img {
@@ -78,6 +90,11 @@
 }
 
 @media(max-width:991px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
     .himg {
         display: none;
     }
@@ -354,6 +371,7 @@
 
     .hero_content p {
         font-size: 16px;
+        line-height: 28px;
     }
 
     .hero_button {

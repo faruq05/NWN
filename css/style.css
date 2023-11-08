@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     /* font-family: 'MicroExtendFLF'; */
-    font-family: 'microextendflfbold';
+    font-family: 'Helvetica';
 }
 
 html {
@@ -34,9 +34,9 @@ a {
 }
 
 h1 {
-    font-size: 43px;
+    font-size: 60px;
     color: var(--cs-text);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h2 {
@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'microextendflfregular' !important;
+    font-family: 'Helvetica' !important;
     font-size: 20px;
     color: var(--cs-text);
     -webkit-text-stroke: 0.5px var(--cs-black);
@@ -57,7 +57,7 @@ h3 {
 p {
     font-size: 18px;
     color: var(--cs-black);
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Helvetica' !important;
     line-height: 28px;
     font-weight: 400;
 }
@@ -106,12 +106,12 @@ a {
 .btn-cs:hover {
     border-color: var(--cs-primary) !important;
     color: var(--cs-white) !important;
-    transition: .2s all ease-in-out, .2s all ease-in-out!important;
+    transition: .2s all ease-in-out, .2s all ease-in-out !important;
 }
 
 .btn-cs:hover span {
-    width: 225%!important;
-    height: 450px!important;
+    width: 225% !important;
+    height: 450px !important;
     /* You need to define an appropriate height value */
 }
 
@@ -127,7 +127,7 @@ a {
     box-shadow: 0px 3px 14px -2px #00000021;
     z-index: 100;
     background-color: var(--cs-white);
-    padding: 10px 0px;
+    padding: 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     -ms-transition: padding 0.3s;
@@ -135,17 +135,30 @@ a {
     transition: padding 0.3s;
 }
 
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+}
+
 .navbar-brand {
-    width: 35%;
+    width: 30%;
 }
 
 .navbar img {
-    width: 22%;
+    width: 35%;
 }
 
 .nav-item {
     position: relative;
     padding: 0px 0px 0px 20px;
+}
+
+.quote_button a {
+    background-color: var(--cs-white);
+}
+
+.btn-cs3{
+    padding: 15px 20px!important;
 }
 
 .nav-link {
@@ -154,7 +167,7 @@ a {
     font-size: 16px;
     color: var(--cs-text) !important;
     position: relative;
-    font-family: 'microextendflfregular' !important;
+    font-family: 'Helvetica' !important;
 }
 
 .nav-link::after {
@@ -206,7 +219,7 @@ a {
     font-size: 20px;
 }
 
-.btn-cls .btn:focus{
+.btn-cls .btn:focus {
     box-shadow: none;
 }
 
@@ -235,7 +248,8 @@ a {
 }
 
 .hero_content p {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 36px;
 }
 
 .hero_image {}
@@ -450,7 +464,7 @@ img.vert-move {
 }
 
 .sertab_des h3 {
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Helvetica' !important;
     font-weight: 600;
     color: var(--cs-primary);
     text-transform: uppercase;
@@ -477,7 +491,7 @@ img.vert-move {
 .item p {}
 
 .item p b {
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Helvetica' !important;
     color: var(--cs-primary);
 }
 
@@ -488,7 +502,7 @@ img.vert-move {
 }
 
 .pricing li p b {
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Helvetica' !important;
     color: var(--cs-primary);
     font-size: 22px;
 }
@@ -514,7 +528,14 @@ img.vert-move {
     margin: 0;
 }
 
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 .btn-cs2 {
+    font-family: 'Helvetica'!important;
     text-transform: uppercase;
     border: 1px solid currentColor;
     padding: 15px 30px;
@@ -654,12 +675,12 @@ img.vert-move {
 }
 
 .contact_content form input::placeholder {
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Helvetica' !important;
 
 }
 
 .contact_content form textarea::placeholder {
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Helvetica' !important;
 
 }
 
@@ -705,7 +726,7 @@ img.vert-move {
 }
 
 .con_side li a {
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Helvetica' !important;
     color: var(--cs-text);
     font-weight: 500;
     font-size: 16px;
