@@ -113,6 +113,7 @@
     .hero_content {
         margin-top: 25%;
         text-align: center;
+        padding: 0;
     }
 
     .about_image {
@@ -361,7 +362,7 @@
     }
 
     .navbar img {
-        width: 30%;
+        width: 40%;
     }
 
     .hero_content {
