@@ -55,6 +55,10 @@
 
 @media(max-width: 1199px) {
 
+    .hero .row{
+        padding: 0;
+    }
+
     .hero_content{
         padding-top: 100px;
     }
@@ -78,7 +82,7 @@
 
     .hero_image img {
         position: absolute;
-        top: 15%;
+        top: 20%;
         width: 40%;
         right: 15px;
     }
