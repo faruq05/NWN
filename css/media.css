@@ -1,4 +1,26 @@
 @media(max-width: 1399px) {
+
+    h1{
+        font-size: 40px;
+    }
+
+    .hero .row{
+        padding-top: 100px;
+    }
+
+    .hero_image img {
+        position: absolute;
+        top: 18%;
+        width: 38%;
+        right: 100px;
+    }
+
+    .hero_content p {
+        font-size: 19px;
+        line-height: 30px;
+        width: 80%;
+    }
+
     .navbar-brand {
         width: 30%;
     }
@@ -38,11 +60,13 @@
     }
 
     .hero_content h1{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .hero_content p{
         font-size: 19px;
+        line-height: 30px;
+        width: 100%;
     }
     .navbar-brand {
         width: 23%;
@@ -54,7 +78,7 @@
 
     .hero_image img {
         position: absolute;
-        top: 23%;
+        top: 15%;
         width: 40%;
         right: 15px;
     }

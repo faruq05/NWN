@@ -31,6 +31,7 @@ a {
     --cs-bg: #f0f8ff;
     --cs-black: #000;
     --cs-white: #fff;
+    --cs-btn:#104a75;
 }
 
 h1 {
@@ -88,7 +89,8 @@ a {
     padding: 15px 30px;
     color: var(--cs-text);
     font-weight: 600;
-    border-color: var(--cs-text);
+    border-color: var(--cs-btn);
+    transition: .2s all ease-in-out, .2s all ease-in-out;
 }
 
 .btn-cs span {
@@ -97,14 +99,15 @@ a {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background-color: var(--cs-primary);
+    background-color:  var(--cs-btn);
     transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 
 .btn-cs:hover {
-    border-color: var(--cs-primary) !important;
+    transform: scale(1.08);
+    border-color:  var(--cs-btn)!important;
     color: var(--cs-white) !important;
     transition: .2s all ease-in-out, .2s all ease-in-out !important;
 }
@@ -127,7 +130,7 @@ a {
     box-shadow: 0px 3px 14px -2px #00000021;
     z-index: 100;
     background-color: var(--cs-white);
-    padding: 0;
+    padding: 10px 0px;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     -ms-transition: padding 0.3s;
@@ -145,7 +148,7 @@ a {
 }
 
 .navbar img {
-    width: 35%;
+    width: 60%;
 }
 
 .nav-item {
@@ -154,11 +157,12 @@ a {
 }
 
 .quote_button a {
-    background-color: var(--cs-white);
+    background-color:  var(--cs-btn)!important;
+    color: var(--cs-white);
 }
 
 .btn-cs3{
-    padding: 15px 20px!important;
+    padding: 10px 20px!important;
 }
 
 .nav-link {
@@ -207,7 +211,7 @@ a {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 
 .offcanvas {
@@ -257,8 +261,8 @@ a {
 .hero_image img {
     position: absolute;
     top: 12%;
-    width: 37%;
-    right: 50px;
+    width: 33%;
+    right: 65px;
 }
 
 .hero_image2 {
@@ -541,14 +545,16 @@ img.vert-move {
     padding: 15px 30px;
     color: var(--cs-text);
     font-weight: 600;
-    border-color: var(--cs-text);
+    border-color: var(--cs-btn);
     transition: .2s all ease-in-out, .2s all ease-in-out;
+    background-color:transparent!important;
 }
 
 .btn-cs2:hover {
-    border-color: var(--cs-primary);
-    color: var(--cs-bg);
-    background-color: var(--cs-primary);
+    transform: scale(1.08);
+    border-color:  var(--cs-btn)!important;
+    color: var(--cs-bg)!important;
+    background-color: var(--cs-btn)!important;
 }
 
 /* ====== Service ends ====== */
@@ -939,7 +945,7 @@ body.light .progress-wrap svg.progress-circle path {
 }
 
 .logo_sc img {
-    width: 35%;
+    width: 45%;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
