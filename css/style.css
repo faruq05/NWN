@@ -35,7 +35,7 @@ a {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 45px;
     color: var(--cs-text);
     font-weight: 700;
 }
@@ -87,13 +87,14 @@ a {
     overflow: hidden;
     padding: 0;
     padding: 15px 30px;
-    color: var(--cs-text);
+    color: var(--cs-white);
     font-weight: 600;
     border-color: var(--cs-btn);
     transition: .2s all ease-in-out, .2s all ease-in-out;
+    background-color: var(--cs-btn)!important;
 }
 
-.btn-cs span {
+/* .btn-cs span {
     position: absolute;
     display: block;
     width: 0;
@@ -103,20 +104,20 @@ a {
     transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
     transform: translate(-50%, -50%);
     z-index: -1;
-}
+} */
 
 .btn-cs:hover {
     transform: scale(1.08);
     border-color:  var(--cs-btn)!important;
+    
     color: var(--cs-white) !important;
     transition: .2s all ease-in-out, .2s all ease-in-out !important;
 }
 
-.btn-cs:hover span {
+/* .btn-cs:hover span {
     width: 225% !important;
     height: 450px !important;
-    /* You need to define an appropriate height value */
-}
+} */
 
 .btn-cs:active {
     background-color: var(--cs-primary);
@@ -145,10 +146,11 @@ a {
 
 .navbar-brand {
     width: 30%;
+    padding: 0!important;
 }
 
 .navbar img {
-    width: 60%;
+    width: 80%;
 }
 
 .nav-item {
@@ -260,7 +262,7 @@ a {
 
 .hero_image img {
     position: absolute;
-    top: 12%;
+    top: 10%;
     width: 33%;
     right: 65px;
 }
@@ -543,11 +545,11 @@ img.vert-move {
     text-transform: uppercase;
     border: 1px solid currentColor;
     padding: 15px 30px;
-    color: var(--cs-text);
+    color: var(--cs-white);
     font-weight: 600;
     border-color: var(--cs-btn);
     transition: .2s all ease-in-out, .2s all ease-in-out;
-    background-color:transparent!important;
+    background-color: var(--cs-btn)!important;
 }
 
 .btn-cs2:hover {

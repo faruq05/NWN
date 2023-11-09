@@ -77,7 +77,7 @@
     }
 
     .navbar-brand img {
-        width: 50%;
+        width: 100%;
     }
 
     .hero_image img {
@@ -181,7 +181,7 @@
 
     
     .logo_sc img {
-        width: 60%!important;
+        width: 80%!important;
     }
 
 }
@@ -390,7 +390,7 @@
     }
 
     .navbar img {
-        width: 40%;
+        width: 90%;
     }
 
     .hero_content {
