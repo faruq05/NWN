@@ -495,7 +495,6 @@ img.vert-move {
 .item {}
 
 .item p {}
-
 .item p b {
     font-family: 'Helvetica' !important;
     color: var(--cs-primary);
